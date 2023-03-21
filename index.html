@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    #btn {
+        padding: 10px 40px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background: #ed563b;
+        color: #fff;
+        font-size: 20px;
+        margin-top: 25px;
+        border-radius: 50px;
+        margin-left: 500px;
+        margin-top: 150px;
+
+
+    }
+</style>
+
+<body>
+    <input id="digits">
+    <button id="btn" onclick="print_num(digits.value)">ENTER NUMBER HERE</button>
+
+    <script>
+        // if less then 10 print number
+        function print_num(value) {
+            if (value < 11) {
+                console.log(value)
+                //if between 11-20 print number twice
+            } else {
+                if (value < 21) {
+                    console.log(value)
+                    console.log(value)
+                    //if between 20-30 print ben
+                } else {
+                    if (value < 31) {
+                        console.log("ben")
+                        //if between 30-40 print number multiple by 4
+                    } else {
+                        if (value < 41) {
+                            console.log(value * 4)
+                            //if between 40-50 print number and add 200
+                        } else {
+                            if (value < 51) {
+                                console.log(parseInt(value) + 200)
+
+                            }
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
